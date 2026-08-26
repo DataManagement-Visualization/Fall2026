@@ -1,34 +1,60 @@
-# ECON 525: Data Management & Visualization in Economics
+# ECON 525: Data Management & Visualization in Economics (Fall 2026)
 
-Student-facing course materials for Fall 2026 at Emory University.
+| | |
+|---|---|
+| Instructor | [Cristhian Rosales-Castillo](https://www.cristhianrosalescastillo.com/index.html) |
+| Email | [crosal3@emory.edu](mailto:crosal3@emory.edu) |
+| Office Hours | Thursday, 5:00–6:00 p.m. ET (see Canvas for the Zoom link) |
+| Meeting day/time | Tuesday/Thursday, 8:30–9:45 a.m. ET |
+| Classroom | Rich Building 103 |
 
-**Official repository:** <https://github.com/DataManagement-Visualization/Fall2026>  
-**Instructor:** [Cristhian Rosales-Castillo](https://www.cristhianrosalescastillo.com/index.html) · [crosal3@emory.edu](mailto:crosal3@emory.edu) · [LinkedIn](https://www.linkedin.com/in/cristhian-rosales-castillo/)  
-**Course:** ECON 525 — Data Management & Visualization in Economics  
-**Meetings:** Tuesday and Thursday, 8:30–9:45 a.m. ET, Rich Building 103  
-**Term:** August 27–December 8, 2026  
-**Office hours:** Thursday, 5:00–6:00 p.m. ET via [Zoom](https://emory.zoom.us/j/91550620938)  
-**No class:** October 13 and November 26  
-**Final presentations:** December 17, 8:00–10:30 a.m., Rich Building 103  
-**Textbook:** No Textbook
+## Course description
 
-## Repository structure
+ECON 525 equips students with essential programming and computational data-science skills tailored to economic analysis. Students will use Python, Git, GitHub, the command line, GitHub Codespaces, Docker, and SQL to create collaborative and reproducible workflows. The course also introduces web scraping, supervised machine learning, experiment tracking and model management, production-oriented machine-learning workflows, large language models and agentic AI, and effective data visualization and dashboard reporting. Hands-on assessments and mini-projects give students opportunities to apply these tools to economic data and real-world analytical problems.
 
-- `01-intro`: course setup and reproducible data-science workflows
-- `02-github`: Git and GitHub
-- `03-shell`: command-line tools
-- `04-programming4ds`: Python, R, SQL, and web data
-- `05-appliedML`: applied machine learning and production workflows
-- `06-data-viz`: data visualization and dashboards
-- `assessments`: public assessment instructions and supporting files
-- `artifacts`: public datasets and example artifacts
+## Learning outcomes
 
-Slides and rendered HTML files can be opened directly from this repository or through the course links in Canvas. The complete syllabus, assignment deadlines, grading information, and private course material remain in Canvas.
+This course will equip students to create reproducible data-analysis pipelines. Upon completing the course, students will be able to acquire, organize, explore, and analyze economic data and communicate their findings effectively. By the end of the course, students will be proficient in:
 
-## External account placeholders
+- Developing collaborative, reproducible workflows using Git and GitHub for version control.
+- Running workflows locally and remotely using the command line and GitHub Codespaces.
+- Writing efficient Python code using sound programming practices.
+- Acquiring and transforming data using pandas, NumPy, web scraping, SQL, and SQLite.
+- Building and evaluating supervised machine-learning workflows for economic applications.
+- Tracking experiments and managing machine-learning models.
+- Using Docker containers to support reproducible research and production workflows.
+- Using large language models and agentic AI responsibly in analytical workflows.
+- Communicating results through effective visualizations, dashboards, and reports.
 
-Examples that depend on personal GitHub, Docker Hub, or Weights & Biases accounts use placeholders such as `YOUR_USERNAME`, `YOUR_ACCOUNT`, and `YOUR_WANDB_ENTITY`. Replace them locally with the account authorized for your work; do not commit credentials.
+## Grades
 
-## Provenance
+Grades will be based on the categories and weights below. Additional information is available in Canvas.
 
-This repository is adapted from prior public course materials. See [UPSTREAM.md](UPSTREAM.md) for the exact source revision.
+| Component | Percent |
+|---|---:|
+| Class Participation | 15% |
+| Online Learning | 20% |
+| In-class Assessments | 25% |
+| Mini-Projects | 40% |
+| **Total points** | **100%** |
+
+## Topics
+
+- Part 1: Command Line and Version Control
+  - Set up.
+  - Command line and the terminal.
+  - Git and GitHub for version control.
+- Part 2: Programming Essentials and Best Practices
+  - Python basics.
+  - pandas and mathematical operations with NumPy.
+  - Getting data from different sources: web scraping.
+  - Data ingestion and transformation with SQL: SQLite.
+- Part 3: Applied Data Science and Machine Learning
+  - Supervised machine learning.
+  - Experiment tracking and model management.
+  - Developing machine-learning models for production environments.
+  - Machine learning in economics: debiased/orthogonal machine learning (optional).
+- Part 4: AI, Analytics Engineering and Data Visualization
+  - Docker, images, and containers for reproducible research.
+  - Using large language models (LLMs) and agentic AI.
+  - Data visualizations and reporting in dashboards.
