@@ -1,0 +1,239 @@
+---
+title: "Lecture 1"
+subtitle: "Intro"
+author: Cristhian Rosales-Castillo
+date: ECON 525, Emory University
+output:
+  xaringan::moon_reader:
+    includes:
+        in_header: "mathjax-equation-numbers.html"
+        after_body: "insert-logo.html"
+    css: ['default', 'metropolis', 'metropolis-fonts', 'emory-colors.css']
+    # self_contained: true
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+    seal: false
+
+---
+
+
+```{r setup, include=FALSE}
+# xaringanExtra::use_scribble() ## Draw on slides. Requires dev version of xaringanExtra.
+library(tidyverse)
+library(hrbrthemes)
+library(fontawesome)
+```
+
+
+class: title-slide   
+
+
+
+# ECON 525: Data Management & Visualization in Economics
+
+## Lecture 1: Welcome + Syllabus and set up
+
+<p align=center>
+Cristhian Rosales-Castillo
+</p>
+<div style="margin-top: -.7cm;"></div>
+<p align=center>
+Emory University
+</p>
+</p>
+<br>
+<p align=center>
+Fall 2026
+</p>
+
+---
+class: center, middle
+name: prologue
+
+# Welcome to ECON 525!
+
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1100px></html>
+
+---
+
+# Table of contents
+
+1. [Introduction](#introduction)
+
+2. [Syllabus highlights](#syllabus)
+
+3. [Getting started](#getting-started)
+
+---
+
+# Background
+
+### Me
+
+`r fa('address-book')` [Cristhian Rosales-Castillo](https://www.cristhianrosalescastillo.com/index.html)
+
+`r fa('envelope')` [crosal3@emory.edu](mailto:crosal3@emory.edu)
+
+`r fa('graduation-cap')` PhD Candidate (Macroeconomics, Econometrics, Machine Learning)
+
+--
+
+### Work experience
+
+Before graduate school, I held public-sector positions:
+- Director of Studies at The National Institute of Statistics in Ecuador
+- Researcher at the Ministry of Education
+- Economic Research Intern (PhD) at The Inter-American Development Bank
+
+---
+
+# Students
+
+- It is your turn!
+
+--
+
+- Please introduce yourself: 
+  - Name
+  - Background
+  - What do you expect to learn from this course?
+  - Any experience with programming or data science?
+
+---
+name: introduction
+# Introduction
+
+
+### Course description
+
+- This course focuses on programming and data management, with an emphasis on building skills for economic analysis and data science.
+- Students will learn how to access and manipulate tabular, text, and social-network data; develop essential computer literacy and reproducible research workflows; and apply these computing skills to real-world big-data scenarios.
+- The course uses R and Python and leverages cloud computing for enhanced data processing.
+
+`r fa('globe')` [Course GitHub](https://github.com/DataManagement-Visualization/Fall2026)
+
+The repository contains the public slides, code, notebooks, and datasets used in class. Deadlines and private course materials remain in Canvas.
+
+
+---
+class: center, middle
+name: syllabus
+
+# Syllabus highlights
+
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1100px></html>
+
+| Item | Fall 2026 details |
+|:--|:--|
+| Instructor | Cristhian Rosales-Castillo · [crosal3@emory.edu](mailto:crosal3@emory.edu) |
+| Meetings | Tuesday and Thursday, 8:30–9:45 a.m. ET · Rich Building 103 |
+| Term | August 27–December 8, 2026 |
+| Office hours | Thursday, 5:00–6:00 p.m. ET · [Zoom](https://emory.zoom.us/j/91550620938) |
+| No class | October 13 and November 26 |
+| Final presentations | December 17, 8:00–10:30 a.m. · Rich Building 103 |
+| Textbook | No Textbook |
+
+The complete syllabus, policies, and assignment deadlines are available in the ECON 525 Canvas course.
+---
+# Why this course?
+
+Fill in the gaps left by traditional econometrics and methods classes.
+
+- Practical skills with tools that will benefit your future career.
+- Neglected skills like how to actually find datasets in the wild and clean them.
+
+Data science skills are highly valuable in private and public sector!
+
+- Data viz, cleaning and wrangling; programming; cloud computation; relational databases; machine learning; etc.
+
+--
+
+> *"In short, we will cover things that I wish someone had taught me when I was finishing my undergraduate
+school."*
+
+---
+
+# You, at the end of this course
+
+<div align="center">
+<img src="pics/awesome.jpg">
+</div>
+
+---
+# Grading
+
+| Component | Percent |
+|:--|--:|
+| Class Participation | 15% |
+| Online Learning | 20% |
+| In-class Assessments | 25% |
+| Mini-Projects | 40% |
+| **Total points** | **100%** |
+
+> 🚨 All graded items must be submitted by the due date and in the manner determined by the instructor. No credit will be given for late submission or for submission by any other means which was not stipulated for the assignment. There is NO late submission policy in the sense that all assessments and/or mini projects submitted after the deadline will receive a grade of 0 (zero points)
+
+---
+name: getting-started
+# Topics
+
+- *Part 1*: Command Line and Version Control
+  - Set up.
+  - Command line and the Terminal.
+  - Git and GitHub for version control.
+- *Part 2*: Programming Essentials and Best Practices
+  - Python basics.
+  - Pandas, mathematical operations with NumPy.
+  - Getting data from different sources: Web scraping.
+  - Data ingestion and transformation with SQL: SQLite.
+
+---
+# Topics (cont.)
+
+- *Part 3*: Applied Data Science and Machine Learning
+  - Supervised Machine Learning.
+  - Experiment tracking and Model Management.
+  - Developing ML models for Production environments.
+  - ML in Economics: Debiased/Orthogonal Machine Learning (optional).
+- *Part 4*: AI, Analytics Engineering and Data Visualization
+  - Docker, Images and containers for reproducible research.
+  - Using Large Language Models (LLMs) and Agentic AI.
+  - Data Visualizations and reporting in Dashboards.
+
+---
+
+# Set up Checklist
+
+- For this course, we are mainly going to use [GitHub Codespaces](https://github.com/features/codespaces).
+- Before next class, I want you to go over the following checklist:
+
+☑ Create a [GitHub](https://github.com/) account.
+  - You will soon receive an invitation to the course organization on GitHub.
+
+☑ Create a [DataCamp](https://app.datacamp.com/) account with your Emory email address.
+
+
+
+---
+# Set up Checklist (cont.)
+
+☑ Get access to [GitHub Education](https://github.com/education/students) benefits and [Microsoft Azure for Students](https://azure.microsoft.com/en-us/free/students).
+
+☑ Download [VS Code](https://code.visualstudio.com/)
+  - This is the integrated development environment (IDE) that we are going to use in this course.
+  - Most of the time, we will use its cloud version through [GitHub Codespaces](https://github.com/features/codespaces).
+
+---
+
+class: center, middle, thank-you-slide
+# Thanks!
+
+
+`r fa('link')` [cristhianrosalescastillo.com](https://www.cristhianrosalescastillo.com/index.html)
+
+`r fa('envelope')` [crosal3@emory.edu](mailto:crosal3@emory.edu)
+
+`r fa('linkedin')` [LinkedIn](https://www.linkedin.com/in/cristhian-rosales-castillo/)
