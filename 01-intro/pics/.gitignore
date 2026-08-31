@@ -1,0 +1,7 @@
+# Unused local GIFs; keep on disk, do not publish
+git-create-repo.gif
+git-local-change.gif
+git-new-branch.gif
+git-pr.gif
+git-push-pull.gif
+git-stage-commit.gif
