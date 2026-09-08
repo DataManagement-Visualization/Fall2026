@@ -1,0 +1,7 @@
+/* Scope layout adjustments to the revised Lecture 3 slides only. */
+.remark-slide-content.shell-compact {
+  font-size: 22px;
+}
+.shell-compact .remark-code {
+  font-size: 16px;
+}
