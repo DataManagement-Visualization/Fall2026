@@ -1026,6 +1026,8 @@ Let's demonstrate with a text file containing all of Shakespeare's Sonnets.<sup>
 wc examples/sonnets.txt
 ```
 
+In this output: **3029** = lines (newline characters), **20701** = words, and **122780** = bytes.
+
 .footnote[
 <sup>1</sup> Courtesy of [Project Gutenburg](http://www.gutenberg.org/cache/epub/1041/pg1041.txt).
 ]
@@ -1057,11 +1059,12 @@ cat -n examples/sonnets.txt
 
 # Reading text (cont.)
 
-### Scroll: more and less
+### Scroll: less
 
-The `more` and `less` commands provide extra functionality over `cat`. For example, they allow you to move through long text one page at a time.
-- Try this yourself with `$ more examples/sonnets.txt`
+The `less` command lets you move through long text one page at a time. We will use it in Git Bash, macOS, and Linux.
+- Try this yourself with `$ less examples/sonnets.txt`
 - You can move forward and back using the "f" and "b" keys, and quit by hitting "q".
+- On macOS and Linux, `more` is another pager, but we will use `less` throughout this exercise.
 
 ---
 
@@ -1521,7 +1524,7 @@ Say you want to edit my (amazing) `hello.sh` script.
 - Maybe you want to add some additional lines of text, or maybe you're bothered by the fact that there should be a comma after "Hello". (It's a salutation!) 
 
 We have already seen how to append text lines to a file. But when it comes to more complicated editing work, you're better off using a dedicated shell editor.
-- An easier starting point is [**nano**](https://www.nano-editor.org/). (**Windows users**, see [here](https://stackoverflow.com/questions/36802996/bash-nano-command-not-found-at-windows-git-bash).)
+- An easier starting point is [**nano**](https://www.nano-editor.org/). On Windows, the full [Git for Windows](https://gitforwindows.org/) installation includes nano, so you can use it directly in Git Bash.
 
 Open up my script in nano by typing `$ nano examples/hello.sh`. 
 - Note that the functionality is more limited than a normal text editor.
