@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ECON 525: In-class Assessment #1</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">:root {
+--emory-blue: #012169;
+--emory-gold: #f2a900;
+--emory-light-blue: #e9f0f8;
+--ink: #253746;
+--muted: #5d6770;
+--page: #f3f5f7;
+--rule: #dbe4ef;
+--warning-bg: #fff5df;
+--warning-border: #d97706;
+--warning-text: #643c00;
+}
+* {
+box-sizing: border-box;
+}
+html {
+background: var(--page);
+scroll-behavior: smooth;
+}
+body {
+max-width: 980px;
+margin: 36px auto;
+padding: 52px 64px 72px;
+border-top: 8px solid var(--emory-blue);
+background: #fff;
+box-shadow: 0 10px 32px rgba(1, 33, 105, 0.12);
+color: var(--ink);
+font-family: "Segoe UI", Arial, sans-serif;
+font-size: 17px;
+line-height: 1.65;
+}
+h1,
+h2,
+h3 {
+line-height: 1.25;
+}
+h1 {
+margin: 0 0 0.3rem;
+color: var(--emory-blue);
+font-size: 2.35rem;
+letter-spacing: -0.025em;
+}
+h1 + h2 {
+margin: 0.35rem 0 2rem;
+padding: 0 0 1.2rem;
+border-bottom: 4px solid var(--emory-gold);
+color: #49627a;
+font-size: 1.45rem;
+font-weight: 500;
+}
+h2 {
+margin: 2.5rem 0 0.8rem;
+padding-bottom: 0.35rem;
+border-bottom: 2px solid var(--rule);
+color: var(--emory-blue);
+font-size: 1.65rem;
+}
+h3 {
+margin: 1.9rem 0 0.65rem;
+color: #334f70;
+font-size: 1.25rem;
+}
+p {
+margin: 0.8rem 0;
+}
+a {
+color: #0066b3;
+text-decoration-thickness: 1px;
+text-underline-offset: 3px;
+}
+a:hover,
+a:focus {
+color: var(--emory-blue);
+text-decoration-thickness: 2px;
+}
+#TOC {
+margin: 2rem 0 2.4rem;
+padding: 1rem 1.35rem;
+border-left: 5px solid var(--emory-blue);
+border-radius: 0 8px 8px 0;
+background: var(--emory-light-blue);
+}
+#TOC::before {
+color: var(--emory-blue);
+content: "On this page";
+font-weight: 700;
+}
+#TOC ul {
+margin: 0.45rem 0 0;
+padding-left: 1.25rem;
+}
+#TOC ul ul {
+margin-top: 0.1rem;
+}
+#TOC li {
+margin: 0.15rem 0;
+}
+blockquote {
+margin: 1.5rem 0;
+padding: 1rem 1.2rem;
+border-left: 5px solid var(--warning-border);
+border-radius: 0 8px 8px 0;
+background: var(--warning-bg);
+color: var(--warning-text);
+}
+blockquote p {
+margin: 0;
+}
+code {
+padding: 0.12em 0.35em;
+border-radius: 4px;
+background: #f0f3f6;
+color: #8b1e3f;
+font-family: Consolas, "Liberation Mono", monospace;
+font-size: 0.92em;
+}
+ol,
+ul {
+padding-left: 1.55rem;
+}
+li {
+margin: 0.38rem 0;
+}
+ol li::marker {
+color: var(--emory-blue);
+font-weight: 700;
+}
+strong {
+color: #17365d;
+}
+@media (max-width: 720px) {
+html {
+background: #fff;
+}
+body {
+margin: 0;
+padding: 30px 22px 48px;
+border-top-width: 6px;
+box-shadow: none;
+font-size: 16px;
+}
+h1 {
+font-size: 1.9rem;
+}
+h1 + h2 {
+font-size: 1.25rem;
+}
+}
+@media print {
+html {
+background: #fff;
+}
+body {
+max-width: none;
+margin: 0;
+padding: 18mm;
+border-top-width: 5px;
+box-shadow: none;
+}
+a {
+color: inherit;
+}
+}
+</style>
+</head>
+<body>
+<div id="3e7278fd" class="cell markdown">
+<h1 id="econ-525-data-management--visualization-in-economics">ECON 525:
+Data Management &amp; Visualization in Economics</h1>
+<h2 id="in-class-assessment-1-exploring-the-command-line">In-class
+Assessment #1: Exploring the command line</h2>
+</div>
+<div id="659f2945" class="cell markdown">
+<h2 id="about">About</h2>
+<p>The goal of this activity is to practice the Bash commands covered in
+class, including navigation, file management, text processing,
+redirection, pipes, loops, and scripting.</p>
+<blockquote>
+<p><strong>Assessment policy:</strong> The use of AI tools and all
+external sources is strictly prohibited. Only materials and content
+covered in class are permitted.</p>
+</blockquote>
+</div>
+<div id="968df3c8" class="cell markdown">
+<h2 id="instructions">Instructions</h2>
+<h3 id="1-open-bash-and-locate-the-course-folder">1. Open Bash and
+locate the course folder</h3>
+<ul>
+<li>Open the cloned <code>Econ525-Fall2026</code> repository in VS
+Code.</li>
+<li>Open a Bash terminal. On Windows, select <strong>Git Bash</strong>.
+On macOS, open Terminal and type <code>bash</code>.</li>
+<li>Move to the repository&#39;s <code>03-shell</code> folder. In VS Code,
+you may right-click <code>03-shell</code> and select <strong>Open in
+Integrated Terminal</strong>.</li>
+<li>Run <code>pwd</code> to confirm that your working directory ends in
+<code>Econ525-Fall2026/03-shell</code>.</li>
+<li>Confirm that the terminal profile is Bash. Your prompt may look
+different from the examples shown in class.</li>
+</ul>
+<h3 id="2-use-the-help-available-in-bash">2. Use the help available in
+Bash</h3>
+<ul>
+<li>Run <code>ls --help | less</code>, <code>mkdir --help | less</code>,
+and <code>rm --help | less</code>. Press <code>q</code> to leave
+<code>less</code>.</li>
+<li>Because <code>cd</code> is a Bash built-in command, use
+<code>help cd</code>.</li>
+<li>Git Bash normally does not include <code>man</code>, so you do not
+need it for this assessment.</li>
+</ul>
+<h3 id="3-create-the-assessment-directory">3. Create the assessment
+directory</h3>
+<ul>
+<li>From <code>03-shell</code>, list the available files with
+<code>ls -lh</code>.</li>
+<li>Create a directory named <code>econ525_assessment</code>.</li>
+<li>Copy <code>examples/nursery.txt</code> into the new directory and
+rename the copy <code>sample.txt</code>. Use only Bash commands.</li>
+<li>Move into <code>econ525_assessment</code> and confirm the location
+with <code>pwd</code>.</li>
+<li>Create <code>my_script.sh</code> and edit it with
+<code>nano</code>.</li>
+</ul>
+<h3 id="4-write-the-bash-script">4. Write the Bash script</h3>
+<p>Your <code>my_script.sh</code> file must complete the following tasks
+in this order:</p>
+<ol>
+<li>Begin with the shebang <code>#!/usr/bin/env bash</code>.</li>
+<li>Print <code>Hello, Data Science!</code> to the terminal.</li>
+<li>Use <code>cat</code> to display all of <code>sample.txt</code>.</li>
+<li>Use <code>head</code> to display the first 7 lines of
+<code>sample.txt</code>.</li>
+<li>Use <code>tail</code> to display the last 7 lines of
+<code>sample.txt</code>.</li>
+<li>Redirect the output of <code>ls -lh</code> to
+<code>directory_list.txt</code>.</li>
+<li>Use a pipe to sort <code>directory_list.txt</code> and display the
+sorted result with <code>less</code>.</li>
+<li>Create a directory named <code>texts</code>.</li>
+<li>Use a <code>for</code> loop to create <code>texts/file1.txt</code>
+through <code>texts/file5.txt</code>. Each file should contain its
+corresponding message, such as <code>This is file 1.</code></li>
+<li>Concatenate the five files into <code>texts/all_texts.txt</code>. Do
+not include <code>all_texts.txt</code> as one of its own inputs.</li>
+</ol>
+<p>Save the script with <strong>LF</strong> line endings. In
+<code>nano</code>, press <strong>Ctrl+X</strong>, then
+<strong>Y</strong>, and then <strong>Enter</strong> to save and
+exit.</p>
+<h3 id="5-run-and-check-the-script">5. Run and check the script</h3>
+<ul>
+<li>Run the script with <code>bash my_script.sh</code>. Executable
+permission is not required when you invoke the script this way.</li>
+<li>Use <code>ls -lh</code> and <code>ls -lh texts</code> to confirm
+that the script created the required files.</li>
+<li>Use <code>cat texts/all_texts.txt</code> to confirm that the final
+file contains five messages in order.</li>
+</ul>
+</div>
+<div id="9f5a3f63" class="cell markdown">
+<h2 id="submission">Submission</h2>
+<ol>
+<li>Compress the complete <code>econ525_assessment</code> directory
+using File Explorer on Windows or Finder on macOS. Name the archive
+<code>FirstName_LastName_econ525_assessment.zip</code>.</li>
+<li>Submit the <code>.zip</code> file through the corresponding Canvas
+assignment.</li>
+<li>Upload a screenshot of your terminal that shows the script command
+and its output.</li>
+</ol>
+<p>The assessment will be graded based on completion of the requested
+tasks and the correctness of the Bash commands, script, and generated
+files. Replace <code>FirstName</code> and <code>LastName</code> with
+your own first and last names.</p>
+</div>
+</body>
+</html>
