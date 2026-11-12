@@ -1,0 +1,10 @@
+/* Local readability adjustments for the classification case study. */
+.remark-slide-content { font-size: 25px; }
+.remark-code { font-size: 20px; line-height: 1.25; }
+table { font-size: 22px; line-height: 1.25; width: 100%; }
+th, td { padding: 7px 12px; }
+.small { font-size: 75%; }
+.pull-left, .pull-right { width: 47%; }
+
+.classification-output-plot { display: block; max-width: 92%; max-height: 330px; margin: 0 auto; }
+.classification-pipeline-output { display: block; max-width: 90%; max-height: 290px; margin: 0 auto; }
